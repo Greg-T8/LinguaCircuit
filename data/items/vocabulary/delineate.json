@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-delineate",
+    "item_type": "vocabulary",
+    "term": "delineate",
+    "part_of_speech": "verb",
+    "definition": "To describe or indicate precisely; to outline the exact boundaries or features of something.",
+    "usage_notes": [
+        "Used when precision and clear boundaries matter",
+        "Common in technical, legal, and academic writing",
+        "Can be used both literally (drawing outlines) and figuratively (defining roles)"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'delineare' — to sketch out. 'de-' (completely) + 'lineare' (to draw a line), from 'linea' (line).",
+        "roots": ["de-", "linea"]
+    },
+    "examples": [
+        "The contract clearly delineates the responsibilities of each party.",
+        "She delineated the project scope to prevent scope creep."
+    ],
+    "confusions": [
+        {
+            "term": "describe",
+            "difference": "'Describe' gives a general account; 'delineate' implies precise, boundary-level detail."
+        },
+        {
+            "term": "define",
+            "difference": "'Define' states meaning; 'delineate' maps out edges and distinctions."
+        }
+    ],
+    "difficulty": 3,
+    "tags": ["formal", "precision", "technical", "boundaries"]
+}

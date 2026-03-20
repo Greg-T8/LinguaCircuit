@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-articulate",
+    "item_type": "vocabulary",
+    "term": "articulate",
+    "part_of_speech": "verb",
+    "definition": "To express an idea or feeling clearly and effectively in words.",
+    "usage_notes": [
+        "As a verb, emphasizes clarity of expression",
+        "As an adjective, describes a person who speaks well",
+        "Valued in leadership, presentations, and persuasion"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'articulare' — to divide into joints, to utter distinctly. From 'articulus' (small joint), diminutive of 'artus' (joint).",
+        "roots": ["articulus"]
+    },
+    "examples": [
+        "She articulated her vision so clearly that the team immediately understood the direction.",
+        "He struggled to articulate his frustration during the meeting."
+    ],
+    "confusions": [
+        {
+            "term": "express",
+            "difference": "'Express' is general; 'articulate' implies precision and clarity in how the idea is communicated."
+        },
+        {
+            "term": "enunciate",
+            "difference": "'Enunciate' focuses on pronunciation; 'articulate' focuses on content and clarity of thought."
+        }
+    ],
+    "difficulty": 2,
+    "tags": ["communication", "clarity", "professional", "precision"]
+}

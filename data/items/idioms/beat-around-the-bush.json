@@ -1,0 +1,37 @@
+{
+    "item_id": "idiom-beat-around-the-bush",
+    "item_type": "idiom",
+    "term": "beat around the bush",
+    "part_of_speech": "expression",
+    "definition": "To avoid talking about the main topic or to delay getting to the point.",
+    "usage_notes": [
+        "Often used as a gentle criticism or to request directness",
+        "Frequently appears as 'stop beating around the bush'",
+        "Contrasts with 'cut to the chase'"
+    ],
+    "etymology": {
+        "origin_summary": "From medieval hunting, where beaters would hit around bushes to flush out game birds rather than going in directly.",
+        "roots": []
+    },
+    "examples": [
+        "Stop beating around the bush and tell me what happened.",
+        "He beat around the bush for ten minutes before admitting the project was behind schedule."
+    ],
+    "confusions": [
+        {
+            "term": "hedge",
+            "difference": "'Hedge' means to qualify or soften statements; 'beat around the bush' means to avoid the subject entirely."
+        }
+    ],
+    "difficulty": 1,
+    "tags": ["communication", "directness", "avoidance"],
+    "literal_gloss": "Hit the area around a bush instead of going straight in.",
+    "figurative_meaning": "Avoid addressing the main issue directly.",
+    "register": "conversational",
+    "common_contexts": [
+        "conversations where someone is being evasive",
+        "feedback sessions",
+        "requests for directness"
+    ],
+    "misuse_notes": "Using this phrase itself can sound impatient; be mindful of tone."
+}

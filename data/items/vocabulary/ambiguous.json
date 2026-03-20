@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-ambiguous",
+    "item_type": "vocabulary",
+    "term": "ambiguous",
+    "part_of_speech": "adjective",
+    "definition": "Open to more than one interpretation; not having a single clear meaning.",
+    "usage_notes": [
+        "Can be unintentional (poor writing) or intentional (diplomatic language)",
+        "Critical concept in law, contracts, and requirements engineering",
+        "Distinguishable from vague — ambiguous has multiple clear meanings, vague has no clear meaning"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'ambiguus' — uncertain, shifting. 'ambi-' (both ways) + 'agere' (to drive).",
+        "roots": ["ambi-", "agere"]
+    },
+    "examples": [
+        "The ambiguous wording in the contract led to a legal dispute.",
+        "Her response was deliberately ambiguous to avoid taking a side."
+    ],
+    "confusions": [
+        {
+            "term": "vague",
+            "difference": "'Vague' means unclear due to lack of detail; 'ambiguous' means unclear because multiple interpretations exist."
+        },
+        {
+            "term": "equivocal",
+            "difference": "'Equivocal' implies intentional ambiguity, often to mislead; 'ambiguous' can be unintentional."
+        }
+    ],
+    "difficulty": 2,
+    "tags": ["clarity", "precision", "communication", "analytical"]
+}

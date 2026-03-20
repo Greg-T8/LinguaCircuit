@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-cogent",
+    "item_type": "vocabulary",
+    "term": "cogent",
+    "part_of_speech": "adjective",
+    "definition": "Clear, logical, and convincing in argument or reasoning.",
+    "usage_notes": [
+        "Used to describe arguments, reasoning, or evidence — not people directly",
+        "Stronger than 'convincing' — implies logical rigor",
+        "Common in formal debate, legal writing, and academic critique"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'cogere' — to compel, drive together. 'co-' (together) + 'agere' (to drive).",
+        "roots": ["co-", "agere"]
+    },
+    "examples": [
+        "She presented a cogent argument that swayed the entire committee.",
+        "The evidence was cogent enough to warrant further investigation."
+    ],
+    "confusions": [
+        {
+            "term": "convincing",
+            "difference": "'Convincing' can rely on emotion; 'cogent' specifically implies logical clarity."
+        },
+        {
+            "term": "coherent",
+            "difference": "'Coherent' means logically connected; 'cogent' means logically compelling."
+        }
+    ],
+    "difficulty": 3,
+    "tags": ["formal", "academic", "argumentation", "precision"]
+}

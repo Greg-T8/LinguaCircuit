@@ -1,0 +1,37 @@
+{
+    "item_id": "idiom-in-a-nutshell",
+    "item_type": "idiom",
+    "term": "in a nutshell",
+    "part_of_speech": "expression",
+    "definition": "In the fewest possible words; as a brief summary.",
+    "usage_notes": [
+        "Used to introduce a short summary of a longer explanation",
+        "Signals that you are compressing information",
+        "Appropriate in both casual and semi-formal contexts"
+    ],
+    "etymology": {
+        "origin_summary": "From the idea of something small enough to fit inside a nutshell. Shakespeare used a similar metaphor in Hamlet.",
+        "roots": []
+    },
+    "examples": [
+        "In a nutshell, we missed the deadline because the requirements changed mid-sprint.",
+        "The report is 50 pages, but in a nutshell, revenue is up and costs are down."
+    ],
+    "confusions": [
+        {
+            "term": "in short",
+            "difference": "Nearly synonymous. 'In a nutshell' is more colorful and conversational; 'in short' is more formal."
+        }
+    ],
+    "difficulty": 1,
+    "tags": ["summary", "communication", "brevity"],
+    "literal_gloss": "Something so small it fits inside the shell of a nut.",
+    "figurative_meaning": "A very brief summary of something more complex.",
+    "register": "conversational",
+    "common_contexts": [
+        "opening or closing a summary",
+        "executive overviews",
+        "casual explanations"
+    ],
+    "misuse_notes": "Don't follow with a lengthy explanation — that contradicts the promise of brevity."
+}

@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-obfuscate",
+    "item_type": "vocabulary",
+    "term": "obfuscate",
+    "part_of_speech": "verb",
+    "definition": "To make something unclear, unintelligible, or difficult to understand, often deliberately.",
+    "usage_notes": [
+        "Often implies intentional lack of clarity",
+        "Common in formal, analytical, or technical writing",
+        "Carries a negative connotation — suggests the speaker is hiding something"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'obfuscare' — to darken. 'ob-' (over) + 'fuscare' (to make dark), from 'fuscus' (dark).",
+        "roots": ["ob-", "fusc"]
+    },
+    "examples": [
+        "The report obfuscated the core issue with layers of technical jargon.",
+        "Politicians often obfuscate their positions to avoid commitment."
+    ],
+    "confusions": [
+        {
+            "term": "complicate",
+            "difference": "'Complicate' means to make more complex; 'obfuscate' means to make less clear, often on purpose."
+        },
+        {
+            "term": "obscure",
+            "difference": "'Obscure' can be accidental; 'obfuscate' usually implies deliberate effort."
+        }
+    ],
+    "difficulty": 3,
+    "tags": ["formal", "academic", "clarity", "precision"]
+}

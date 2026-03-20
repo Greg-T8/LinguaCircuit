@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-pragmatic",
+    "item_type": "vocabulary",
+    "term": "pragmatic",
+    "part_of_speech": "adjective",
+    "definition": "Dealing with things in a practical, realistic way rather than based on theory or ideals.",
+    "usage_notes": [
+        "Positive connotation in most contexts — implies practical wisdom",
+        "Often contrasted with 'idealistic' or 'theoretical'",
+        "Common in business, engineering, and policy discussions"
+    ],
+    "etymology": {
+        "origin_summary": "From Greek 'pragmatikos' — fit for action, from 'pragma' (deed, act), from 'prassein' (to do).",
+        "roots": ["pragma"]
+    },
+    "examples": [
+        "We need a pragmatic solution, not another theoretical framework.",
+        "Her pragmatic approach to budgeting kept the project on track."
+    ],
+    "confusions": [
+        {
+            "term": "practical",
+            "difference": "'Practical' is everyday; 'pragmatic' specifically opposes idealism and implies strategic realism."
+        },
+        {
+            "term": "utilitarian",
+            "difference": "'Utilitarian' focuses on usefulness/outcomes only; 'pragmatic' balances ideals with reality."
+        }
+    ],
+    "difficulty": 2,
+    "tags": ["professional", "strategy", "decision-making"]
+}

@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-ephemeral",
+    "item_type": "vocabulary",
+    "term": "ephemeral",
+    "part_of_speech": "adjective",
+    "definition": "Lasting for a very short time; transient.",
+    "usage_notes": [
+        "Often used to describe beauty, trends, moments, or digital content",
+        "Carries a slightly poetic or reflective tone",
+        "Also used technically in computing (ephemeral storage, ephemeral ports)"
+    ],
+    "etymology": {
+        "origin_summary": "From Greek 'ephemeros' — lasting only a day. 'epi-' (on) + 'hemera' (day).",
+        "roots": ["epi-", "hemera"]
+    },
+    "examples": [
+        "Social media trends are ephemeral — here today, forgotten tomorrow.",
+        "The ephemeral beauty of cherry blossoms makes them all the more treasured."
+    ],
+    "confusions": [
+        {
+            "term": "temporary",
+            "difference": "'Temporary' implies planned duration; 'ephemeral' implies something naturally short-lived."
+        },
+        {
+            "term": "fleeting",
+            "difference": "Nearly synonymous, but 'ephemeral' is more formal and literary."
+        }
+    ],
+    "difficulty": 3,
+    "tags": ["descriptive", "literary", "time", "precision"]
+}

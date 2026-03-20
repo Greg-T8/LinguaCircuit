@@ -1,0 +1,38 @@
+{
+    "item_id": "idiom-read-between-the-lines",
+    "item_type": "idiom",
+    "term": "read between the lines",
+    "part_of_speech": "expression",
+    "definition": "To understand a hidden or implied meaning that is not explicitly stated.",
+    "usage_notes": [
+        "Implies the real message is different from the literal words",
+        "Used for interpreting subtext in communication, writing, or behavior",
+        "Valued in diplomacy, negotiations, and social awareness"
+    ],
+    "etymology": {
+        "origin_summary": "Possibly from cryptography, where secret messages were written in invisible ink between the visible lines of a letter.",
+        "roots": []
+    },
+    "examples": [
+        "If you read between the lines of the announcement, layoffs are coming.",
+        "You need to read between the lines — she's politely declining."
+    ],
+    "confusions": [
+        {
+            "term": "infer",
+            "difference": "'Infer' is a formal cognitive process; 'read between the lines' emphasizes detecting unspoken intent."
+        }
+    ],
+    "difficulty": 1,
+    "tags": ["communication", "interpretation", "subtext"],
+    "literal_gloss": "Look for hidden writing between the visible lines of text.",
+    "figurative_meaning": "Detect the implied meaning behind what is explicitly said.",
+    "register": "conversational",
+    "common_contexts": [
+        "interpreting corporate announcements",
+        "understanding social cues",
+        "analyzing political statements",
+        "email communication"
+    ],
+    "misuse_notes": "Don't use when the message is already explicit — it would imply there's a hidden meaning that doesn't exist."
+}

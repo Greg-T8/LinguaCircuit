@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-ameliorate",
+    "item_type": "vocabulary",
+    "term": "ameliorate",
+    "part_of_speech": "verb",
+    "definition": "To make something bad or unsatisfactory better or less severe.",
+    "usage_notes": [
+        "Formal — often used in policy, medicine, and academic writing",
+        "Implies gradual improvement, not instant resolution",
+        "Opposite of exacerbate"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'meliorare' — to make better, from 'melior' (better). Modified through French 'ameliorer'.",
+        "roots": ["melior"]
+    },
+    "examples": [
+        "The new treatment ameliorated the patient's symptoms significantly.",
+        "Government programs aim to ameliorate poverty in underserved communities."
+    ],
+    "confusions": [
+        {
+            "term": "improve",
+            "difference": "'Improve' is general purpose; 'ameliorate' specifically targets a negative condition."
+        },
+        {
+            "term": "mitigate",
+            "difference": "'Mitigate' reduces severity; 'ameliorate' actively makes the situation better."
+        }
+    ],
+    "difficulty": 3,
+    "tags": ["formal", "academic", "improvement", "precision"]
+}

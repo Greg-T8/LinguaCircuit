@@ -1,0 +1,42 @@
+{
+    "item_id": "idiom-a-red-herring",
+    "item_type": "idiom",
+    "term": "a red herring",
+    "part_of_speech": "expression",
+    "definition": "Something that is intended to distract attention from the real issue or matter at hand.",
+    "usage_notes": [
+        "Used in argumentation, mystery, and analysis",
+        "Implies the distraction is either deliberate or recognized after the fact",
+        "Common in debate, investigation, and critical thinking"
+    ],
+    "etymology": {
+        "origin_summary": "From the practice of using strongly smoked (red) herring to train hunting dogs — or to throw them off a scent. Used figuratively since the early 19th century.",
+        "roots": []
+    },
+    "examples": [
+        "The CEO's comments about innovation were a red herring to distract from the layoffs.",
+        "Don't be fooled by that argument — it's a red herring."
+    ],
+    "confusions": [
+        {
+            "term": "straw man",
+            "difference": "'Straw man' is a misrepresentation of an argument; 'red herring' is a distraction from the argument entirely."
+        },
+        {
+            "term": "wild goose chase",
+            "difference": "'Wild goose chase' is a futile pursuit; 'red herring' is a deliberate or misleading distraction."
+        }
+    ],
+    "difficulty": 2,
+    "tags": ["argumentation", "critical-thinking", "distraction"],
+    "literal_gloss": "A smoked fish used to distract hunting dogs from a scent trail.",
+    "figurative_meaning": "A misleading clue or topic used to divert attention from the real issue.",
+    "register": "neutral",
+    "common_contexts": [
+        "debates and arguments",
+        "mystery and detective stories",
+        "analyzing political rhetoric",
+        "identifying logical fallacies"
+    ],
+    "misuse_notes": "Only appropriate when the distraction is clear. Don't use to dismiss an argument you simply disagree with."
+}

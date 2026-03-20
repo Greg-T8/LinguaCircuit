@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-verbose",
+    "item_type": "vocabulary",
+    "term": "verbose",
+    "part_of_speech": "adjective",
+    "definition": "Using more words than necessary; excessively wordy.",
+    "usage_notes": [
+        "Negative connotation — implies wasted effort or unclear communication",
+        "Common in critiques of writing, speeches, and technical documentation",
+        "Also used in programming to describe overly detailed output or logging"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'verbosus' — full of words, from 'verbum' (word).",
+        "roots": ["verbum"]
+    },
+    "examples": [
+        "The verbose report could have been condensed to two pages.",
+        "His verbose explanations confused the audience rather than clarifying."
+    ],
+    "confusions": [
+        {
+            "term": "detailed",
+            "difference": "'Detailed' is neutral or positive; 'verbose' implies unnecessary excess."
+        },
+        {
+            "term": "loquacious",
+            "difference": "'Loquacious' describes a talkative person; 'verbose' describes wordy content."
+        }
+    ],
+    "difficulty": 2,
+    "tags": ["communication", "clarity", "criticism"]
+}

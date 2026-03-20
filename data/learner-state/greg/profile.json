@@ -1,0 +1,17 @@
+{
+    "learner_id": "greg",
+    "display_name": "Greg Tate",
+    "daily_target": {
+        "review_items": 8,
+        "new_items": 2
+    },
+    "lesson_preferences": {
+        "start_time": "06:00",
+        "session_duration_minutes": 15,
+        "include_etymology": true,
+        "include_sentence_practice": true,
+        "include_confusion_pairs": true
+    },
+    "created": "2026-03-20",
+    "notes": []
+}

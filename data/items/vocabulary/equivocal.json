@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-equivocal",
+    "item_type": "vocabulary",
+    "term": "equivocal",
+    "part_of_speech": "adjective",
+    "definition": "Open to more than one interpretation; deliberately ambiguous or evasive.",
+    "usage_notes": [
+        "Often implies intentional vagueness to avoid commitment",
+        "Stronger than 'ambiguous' — carries connotation of evasiveness",
+        "Common in political, legal, and diplomatic language"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'aequivocus' — of equal voice. 'aequi-' (equal) + 'vocare' (to call). Having two equally valid meanings.",
+        "roots": ["aequi-", "vocare"]
+    },
+    "examples": [
+        "The senator gave an equivocal answer to avoid alienating either side.",
+        "The test results were equivocal and required further analysis."
+    ],
+    "confusions": [
+        {
+            "term": "ambiguous",
+            "difference": "'Ambiguous' can be accidental; 'equivocal' implies deliberate evasiveness or equal interpretations."
+        },
+        {
+            "term": "evasive",
+            "difference": "'Evasive' means deliberately avoiding an answer; 'equivocal' means giving an answer with multiple readings."
+        }
+    ],
+    "difficulty": 4,
+    "tags": ["formal", "precision", "communication", "analytical"]
+}

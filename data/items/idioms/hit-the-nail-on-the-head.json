@@ -1,0 +1,37 @@
+{
+    "item_id": "idiom-hit-the-nail-on-the-head",
+    "item_type": "idiom",
+    "term": "hit the nail on the head",
+    "part_of_speech": "expression",
+    "definition": "To describe exactly what is causing a situation or problem; to be precisely correct.",
+    "usage_notes": [
+        "Used to affirm someone else's accurate observation",
+        "Always positive — a compliment on precision",
+        "Common in discussions and analysis"
+    ],
+    "etymology": {
+        "origin_summary": "From carpentry — hitting a nail squarely on its head drives it in cleanly. Known since at least the 16th century.",
+        "roots": []
+    },
+    "examples": [
+        "You hit the nail on the head — the root cause was the configuration change.",
+        "Her diagnosis hit the nail on the head."
+    ],
+    "confusions": [
+        {
+            "term": "on the nose",
+            "difference": "'On the nose' means exactly right (often quantities); 'hit the nail on the head' implies identifying the core issue."
+        }
+    ],
+    "difficulty": 1,
+    "tags": ["accuracy", "affirmation", "analysis"],
+    "literal_gloss": "Strike a nail on its flat top so it drives in straight.",
+    "figurative_meaning": "Identify the exact issue or give a perfectly accurate answer.",
+    "register": "conversational",
+    "common_contexts": [
+        "discussions where someone identifies a root cause",
+        "feedback on accurate analysis",
+        "problem-solving conversations"
+    ],
+    "misuse_notes": "Not appropriate when the insight is only partially correct."
+}

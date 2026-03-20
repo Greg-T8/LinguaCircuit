@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-exacerbate",
+    "item_type": "vocabulary",
+    "term": "exacerbate",
+    "part_of_speech": "verb",
+    "definition": "To make a problem, situation, or negative feeling worse.",
+    "usage_notes": [
+        "Always negative — used with problems, conflicts, conditions",
+        "Stronger than 'worsen' — implies an aggravating action",
+        "Common in medical, political, and analytical contexts"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'exacerbare' — to irritate, provoke. 'ex-' (thoroughly) + 'acerbus' (harsh, bitter).",
+        "roots": ["ex-", "acerbus"]
+    },
+    "examples": [
+        "The new policy only exacerbated the housing shortage.",
+        "Stress can exacerbate existing health conditions."
+    ],
+    "confusions": [
+        {
+            "term": "aggravate",
+            "difference": "'Aggravate' is informal and often misused to mean 'annoy'; 'exacerbate' specifically means to make worse."
+        },
+        {
+            "term": "worsen",
+            "difference": "'Worsen' is neutral; 'exacerbate' implies an active cause making things worse."
+        }
+    ],
+    "difficulty": 3,
+    "tags": ["analytical", "precision", "causation"]
+}

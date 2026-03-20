@@ -1,0 +1,38 @@
+{
+    "item_id": "idiom-move-the-goalposts",
+    "item_type": "idiom",
+    "term": "move the goalposts",
+    "part_of_speech": "expression",
+    "definition": "To unfairly change the rules, criteria, or expectations after someone has already started trying to meet them.",
+    "usage_notes": [
+        "Always negative — implies unfairness or bad faith",
+        "Common in business negotiations, politics, and project management",
+        "Implies the original targets were achievable but were changed to prevent success"
+    ],
+    "etymology": {
+        "origin_summary": "From football (soccer) — literally moving the goalposts would make it impossible to score by the agreed rules.",
+        "roots": []
+    },
+    "examples": [
+        "Every time we meet the requirements, they move the goalposts.",
+        "The client moved the goalposts halfway through the project, adding features we never agreed to."
+    ],
+    "confusions": [
+        {
+            "term": "raise the bar",
+            "difference": "'Raise the bar' can be positive (higher standards); 'move the goalposts' is always negative (unfair shifting)."
+        }
+    ],
+    "difficulty": 2,
+    "tags": ["fairness", "negotiation", "frustration"],
+    "literal_gloss": "Physically relocating the goal in a sport so the other team can't score.",
+    "figurative_meaning": "Changing the rules or criteria after someone has already begun working toward them.",
+    "register": "conversational",
+    "common_contexts": [
+        "scope creep in projects",
+        "changing performance criteria",
+        "political debates",
+        "contract disputes"
+    ],
+    "misuse_notes": "Don't use when standards are legitimately raised for good reason — this idiom implies unfairness."
+}

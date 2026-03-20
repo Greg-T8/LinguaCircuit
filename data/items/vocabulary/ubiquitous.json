@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-ubiquitous",
+    "item_type": "vocabulary",
+    "term": "ubiquitous",
+    "part_of_speech": "adjective",
+    "definition": "Present, appearing, or found everywhere.",
+    "usage_notes": [
+        "Often used to describe technology, trends, or cultural phenomena",
+        "Carries a sense of overwhelming prevalence",
+        "Can be neutral or slightly negative depending on context"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'ubique' — everywhere. 'ubi' (where) + '-que' (general/every).",
+        "roots": ["ubique"]
+    },
+    "examples": [
+        "Smartphones have become ubiquitous in modern life.",
+        "The ubiquitous presence of surveillance cameras raises privacy concerns."
+    ],
+    "confusions": [
+        {
+            "term": "common",
+            "difference": "'Common' means frequently occurring; 'ubiquitous' means literally everywhere, inescapable."
+        },
+        {
+            "term": "pervasive",
+            "difference": "'Pervasive' implies spreading through every part (often negative); 'ubiquitous' simply means everywhere."
+        }
+    ],
+    "difficulty": 3,
+    "tags": ["descriptive", "technology", "cultural", "precision"]
+}

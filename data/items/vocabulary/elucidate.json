@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-elucidate",
+    "item_type": "vocabulary",
+    "term": "elucidate",
+    "part_of_speech": "verb",
+    "definition": "To make something clear by explaining it in more detail or in a simpler way.",
+    "usage_notes": [
+        "Formal register — used in academic, scientific, and professional contexts",
+        "Implies bringing light to a complex or confusing topic",
+        "Stronger than 'explain' — suggests the subject was previously unclear"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'elucidare' — to make light. 'e-' (out) + 'lucidus' (clear, bright), from 'lux' (light).",
+        "roots": ["e-", "lucid"]
+    },
+    "examples": [
+        "The professor elucidated the complex theory with a simple analogy.",
+        "Could you elucidate your reasoning behind that decision?"
+    ],
+    "confusions": [
+        {
+            "term": "explain",
+            "difference": "'Explain' is general purpose; 'elucidate' implies making something previously unclear become clear."
+        },
+        {
+            "term": "illuminate",
+            "difference": "'Illuminate' is broader (can be literal light); 'elucidate' is specifically about intellectual clarity."
+        }
+    ],
+    "difficulty": 3,
+    "tags": ["formal", "academic", "clarity", "precision"]
+}

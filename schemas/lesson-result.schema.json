@@ -1,0 +1,142 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://linguacircuit.github.io/schemas/lesson-result.schema.json",
+    "title": "LinguaCircuit Lesson Result",
+    "description": "Structured output contract for ChatGPT session results.",
+    "type": "object",
+    "required": [
+        "session_id",
+        "learner_id",
+        "session_date",
+        "items_reviewed",
+        "session_summary"
+    ],
+    "properties": {
+        "session_id": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}(-[a-z]+)?$",
+            "description": "Session identifier, e.g., 2026-03-20 or 2026-03-20-am."
+        },
+        "learner_id": {
+            "type": "string",
+            "description": "Learner identifier matching the learner-state folder name."
+        },
+        "session_date": {
+            "type": "string",
+            "format": "date",
+            "description": "ISO 8601 date of the session."
+        },
+        "items_reviewed": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "item_id",
+                    "recall_result",
+                    "usage_result",
+                    "root_understanding",
+                    "recommended_status",
+                    "recommended_next_due_days",
+                    "notes"
+                ],
+                "properties": {
+                    "item_id": {
+                        "type": "string",
+                        "pattern": "^(vocab|idiom)-[a-z0-9-]+$"
+                    },
+                    "recall_result": {
+                        "type": "string",
+                        "enum": [
+                            "correct",
+                            "partial",
+                            "incorrect"
+                        ],
+                        "description": "How well the learner recalled the definition."
+                    },
+                    "usage_result": {
+                        "type": "string",
+                        "enum": [
+                            "correct",
+                            "partial",
+                            "incorrect"
+                        ],
+                        "description": "How well the learner used the word in a sentence."
+                    },
+                    "root_understanding": {
+                        "type": "string",
+                        "enum": [
+                            "correct",
+                            "partial",
+                            "incorrect"
+                        ],
+                        "description": "Understanding of etymology or idiom origin."
+                    },
+                    "recommended_status": {
+                        "type": "string",
+                        "enum": [
+                            "new",
+                            "learning",
+                            "shaky",
+                            "mastered"
+                        ],
+                        "description": "ChatGPT recommendation for the item status."
+                    },
+                    "recommended_next_due_days": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 30,
+                        "description": "Recommended days until next review."
+                    },
+                    "notes": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "Observations about the learner performance."
+                    }
+                }
+            },
+            "description": "Per-item assessment from the session."
+        },
+        "session_summary": {
+            "type": "object",
+            "required": [
+                "mastered",
+                "shaky",
+                "missed_again",
+                "new_introduced"
+            ],
+            "properties": {
+                "mastered": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Item IDs that reached mastered status."
+                },
+                "shaky": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Item IDs still shaky after this session."
+                },
+                "missed_again": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Item IDs that were incorrect again."
+                },
+                "new_introduced": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Item IDs introduced for the first time."
+                }
+            },
+            "description": "High-level session outcome summary."
+        }
+    }
+}

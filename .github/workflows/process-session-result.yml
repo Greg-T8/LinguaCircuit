@@ -1,0 +1,69 @@
+# -------------------------------------------------------------------------
+# Workflow: process-session-result.yml
+# Description: Update learner state when a session result PR is merged
+# Context: LinguaCircuit — Vocabulary & Idiom Learning System
+# Author: Greg Tate
+# -------------------------------------------------------------------------
+
+name: Process Session Result
+
+on:
+  pull_request:
+    types: [closed]
+    paths:
+      - 'data/learner-state/greg/session-history/*.json'
+
+permissions:
+  contents: write
+
+jobs:
+  update-state:
+    # Only run when a PR is merged, not just closed
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch the merge commit so we can find new files
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
+
+      - name: Find new session result files
+        id: find-results
+        run: |
+          # Get files changed in the PR
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- 'data/learner-state/greg/session-history/*.json')
+          echo "files<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$CHANGED_FILES" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+          echo "Found session result files:"
+          echo "$CHANGED_FILES"
+
+      - name: Process each session result
+        shell: pwsh
+        run: |
+          $files = "${{ steps.find-results.outputs.files }}" -split "`n" |
+              Where-Object { $_.Trim() -ne '' }
+
+          foreach ($file in $files) {
+              $fullPath = Join-Path "${{ github.workspace }}" $file
+              Write-Host "Processing: $fullPath"
+
+              ./scripts/powershell/Update-LearnerState.ps1 `
+                  -SessionResultPath $fullPath `
+                  -RepoRoot "${{ github.workspace }}" `
+                  -LearnerId "greg"
+          }
+
+      - name: Commit updated learner state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/learner-state/greg/item-state/
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+          else
+            git commit -m "state-update: process session result from PR #${{ github.event.pull_request.number }}"
+            git push
+          fi

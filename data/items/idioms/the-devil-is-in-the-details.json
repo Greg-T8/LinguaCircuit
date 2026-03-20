@@ -1,0 +1,38 @@
+{
+    "item_id": "idiom-the-devil-is-in-the-details",
+    "item_type": "idiom",
+    "term": "the devil is in the details",
+    "part_of_speech": "expression",
+    "definition": "Small, overlooked specifics can cause significant problems; the details matter most.",
+    "usage_notes": [
+        "Used to warn against overlooking fine print or implementation specifics",
+        "Common in engineering, legal, and project management contexts",
+        "Can be used both as a warning and as an explanation of why something failed"
+    ],
+    "etymology": {
+        "origin_summary": "Variation of 'God is in the details' (attributed to Mies van der Rohe). The 'devil' version emphasizes risk rather than beauty in precision.",
+        "roots": []
+    },
+    "examples": [
+        "The proposal looks great at a high level, but the devil is in the details.",
+        "We learned the hard way that the devil is in the details when we skipped the QA phase."
+    ],
+    "confusions": [
+        {
+            "term": "the big picture",
+            "difference": "'The big picture' is about overall vision; 'the devil is in the details' warns that specifics matter more than the overview."
+        }
+    ],
+    "difficulty": 1,
+    "tags": ["precision", "caution", "engineering", "analysis"],
+    "literal_gloss": "Hidden problems lurk in the small details.",
+    "figurative_meaning": "The specifics and fine print are where problems arise, even if the overview looks good.",
+    "register": "neutral",
+    "common_contexts": [
+        "contract reviews",
+        "project planning",
+        "post-mortem discussions",
+        "code reviews"
+    ],
+    "misuse_notes": "Overuse can sound pessimistic. Best when pointing to a specific overlooked detail."
+}

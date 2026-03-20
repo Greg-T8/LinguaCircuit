@@ -1,0 +1,37 @@
+{
+    "item_id": "idiom-at-face-value",
+    "item_type": "idiom",
+    "term": "at face value",
+    "part_of_speech": "expression",
+    "definition": "To accept something as it appears without questioning whether it is really true or genuine.",
+    "usage_notes": [
+        "Often used with 'take' — 'take at face value'",
+        "Frequently used in negative or cautionary contexts: 'don't take it at face value'",
+        "Implies the surface appearance may not match reality"
+    ],
+    "etymology": {
+        "origin_summary": "From the stated value printed on the face of a coin or banknote, which may differ from its actual or market value.",
+        "roots": []
+    },
+    "examples": [
+        "Don't take the sales figures at face value — they include one-time gains.",
+        "She took his apology at face value and moved on."
+    ],
+    "confusions": [
+        {
+            "term": "literally",
+            "difference": "'Literally' means exactly as stated; 'at face value' means accepting appearance without deeper investigation."
+        }
+    ],
+    "difficulty": 2,
+    "tags": ["analysis", "critical-thinking", "caution"],
+    "literal_gloss": "The value shown on the surface of a coin or note.",
+    "figurative_meaning": "Accept something as it appears without questioning the reality beneath.",
+    "register": "neutral",
+    "common_contexts": [
+        "evaluating claims or data",
+        "cautioning against naivety",
+        "assessing trustworthiness"
+    ],
+    "misuse_notes": "Only meaningful when there is reason to suspect the surface view may be incomplete or deceptive."
+}

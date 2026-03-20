@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-superfluous",
+    "item_type": "vocabulary",
+    "term": "superfluous",
+    "part_of_speech": "adjective",
+    "definition": "Unnecessary, especially through being more than enough; exceeding what is needed.",
+    "usage_notes": [
+        "Slightly formal — implies something should be removed",
+        "Common in editing, design, and efficiency discussions",
+        "Different from 'redundant' which implies duplication"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'superfluus' — overflowing. 'super-' (over) + 'fluere' (to flow).",
+        "roots": ["super-", "fluere"]
+    },
+    "examples": [
+        "The third paragraph was superfluous and detracted from the argument.",
+        "In minimalist design, every superfluous element is removed."
+    ],
+    "confusions": [
+        {
+            "term": "redundant",
+            "difference": "'Redundant' means duplicated unnecessarily; 'superfluous' means beyond what is needed."
+        },
+        {
+            "term": "excessive",
+            "difference": "'Excessive' implies too much of something harmful; 'superfluous' means simply unneeded."
+        }
+    ],
+    "difficulty": 3,
+    "tags": ["precision", "editing", "clarity", "efficiency"]
+}

@@ -1,0 +1,177 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://linguacircuit.github.io/schemas/item.schema.json",
+    "title": "LinguaCircuit Item",
+    "description": "Unified schema for vocabulary words and idioms.",
+    "type": "object",
+    "required": [
+        "item_id",
+        "item_type",
+        "term",
+        "definition",
+        "examples",
+        "difficulty",
+        "tags"
+    ],
+    "properties": {
+        "item_id": {
+            "type": "string",
+            "pattern": "^(vocab|idiom)-[a-z0-9-]+$",
+            "description": "Unique identifier. Prefix vocab- or idiom- followed by kebab-case."
+        },
+        "item_type": {
+            "type": "string",
+            "enum": [
+                "vocabulary",
+                "idiom"
+            ],
+            "description": "Discriminator controlling which fields are required."
+        },
+        "term": {
+            "type": "string",
+            "description": "The word or phrase being taught."
+        },
+        "part_of_speech": {
+            "type": "string",
+            "enum": [
+                "noun",
+                "verb",
+                "adjective",
+                "adverb",
+                "phrase",
+                "expression"
+            ],
+            "description": "Grammatical category."
+        },
+        "definition": {
+            "type": "string",
+            "description": "Clear, concise definition."
+        },
+        "usage_notes": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Register, tone, and usage guidance."
+        },
+        "etymology": {
+            "type": "object",
+            "properties": {
+                "origin_summary": {
+                    "type": "string"
+                },
+                "roots": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "description": "Word origin and root components."
+        },
+        "examples": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1,
+            "description": "Example sentences demonstrating correct usage."
+        },
+        "confusions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "term",
+                    "difference"
+                ],
+                "properties": {
+                    "term": {
+                        "type": "string"
+                    },
+                    "difference": {
+                        "type": "string"
+                    }
+                }
+            },
+            "description": "Commonly confused words and how they differ."
+        },
+        "difficulty": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5,
+            "description": "Difficulty level from 1 (common) to 5 (rare/specialized)."
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Categorization tags (e.g., formal, academic, clarity)."
+        },
+        "literal_gloss": {
+            "type": "string",
+            "description": "Idiom-only: literal interpretation of the phrase."
+        },
+        "figurative_meaning": {
+            "type": "string",
+            "description": "Idiom-only: intended figurative meaning."
+        },
+        "register": {
+            "type": "string",
+            "enum": [
+                "formal",
+                "informal",
+                "conversational",
+                "academic",
+                "neutral"
+            ],
+            "description": "Idiom-only: tone/register where the phrase is appropriate."
+        },
+        "common_contexts": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Idiom-only: situations where the phrase is commonly used."
+        },
+        "misuse_notes": {
+            "type": "string",
+            "description": "Idiom-only: common mistakes or inappropriate contexts."
+        }
+    },
+    "allOf": [
+        {
+            "if": {
+                "properties": {
+                    "item_type": {
+                        "const": "vocabulary"
+                    }
+                }
+            },
+            "then": {
+                "required": [
+                    "part_of_speech",
+                    "etymology"
+                ]
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "item_type": {
+                        "const": "idiom"
+                    }
+                }
+            },
+            "then": {
+                "required": [
+                    "literal_gloss",
+                    "figurative_meaning",
+                    "register",
+                    "common_contexts"
+                ]
+            }
+        }
+    ]
+}

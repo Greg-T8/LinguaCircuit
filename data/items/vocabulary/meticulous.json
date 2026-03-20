@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-meticulous",
+    "item_type": "vocabulary",
+    "term": "meticulous",
+    "part_of_speech": "adjective",
+    "definition": "Showing great attention to detail; very careful and precise.",
+    "usage_notes": [
+        "Positive connotation — implies thoroughness and quality",
+        "Used for people, processes, and work products",
+        "Stronger than 'careful' — suggests near-obsessive attention to detail"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'meticulosus' — fearful, timid, from 'metus' (fear). Originally meant 'fearfully careful'; shifted to 'admirably careful'.",
+        "roots": ["metus"]
+    },
+    "examples": [
+        "Her meticulous record-keeping saved the audit from becoming a disaster.",
+        "The architect was meticulous about every measurement."
+    ],
+    "confusions": [
+        {
+            "term": "thorough",
+            "difference": "'Thorough' means complete; 'meticulous' means precise at a granular level."
+        },
+        {
+            "term": "pedantic",
+            "difference": "'Pedantic' implies excessive focus on trivial details negatively; 'meticulous' is a positive trait."
+        }
+    ],
+    "difficulty": 2,
+    "tags": ["precision", "quality", "professional"]
+}

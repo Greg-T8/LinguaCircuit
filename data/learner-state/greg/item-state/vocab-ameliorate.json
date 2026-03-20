@@ -1,0 +1,18 @@
+{
+  "item_id": "vocab-ameliorate",
+  "status": "new",
+  "last_reviewed": null,
+  "next_due": "2026-03-23",
+  "correct_count": 0,
+  "partial_count": 0,
+  "incorrect_count": 0,
+  "lapse_count": 0,
+  "ease": 2.5,
+  "stability": 0,
+  "recall_dimensions": {
+    "definition": 0,
+    "sentence_usage": 0,
+    "root_understanding": 0
+  },
+  "notes": []
+}

@@ -1,0 +1,38 @@
+{
+    "item_id": "idiom-a-double-edged-sword",
+    "item_type": "idiom",
+    "term": "a double-edged sword",
+    "part_of_speech": "expression",
+    "definition": "Something that has both positive and negative consequences.",
+    "usage_notes": [
+        "Used to introduce nuance into a discussion about trade-offs",
+        "Signals that the speaker sees both sides of an issue",
+        "Common in analysis, debate, and strategic thinking"
+    ],
+    "etymology": {
+        "origin_summary": "Ancient metaphor — a sword with two sharpened edges can cut enemies but also injure the wielder. Appears in many ancient texts.",
+        "roots": []
+    },
+    "examples": [
+        "Social media is a double-edged sword — it connects people but also spreads misinformation.",
+        "Automation is a double-edged sword for the workforce."
+    ],
+    "confusions": [
+        {
+            "term": "trade-off",
+            "difference": "'Trade-off' implies a deliberate exchange; 'double-edged sword' implies inherent duality in a single thing."
+        }
+    ],
+    "difficulty": 1,
+    "tags": ["analysis", "trade-offs", "nuance"],
+    "literal_gloss": "A blade sharp on both sides that can cut in either direction.",
+    "figurative_meaning": "Something with both advantages and disadvantages built into it.",
+    "register": "neutral",
+    "common_contexts": [
+        "technology discussions",
+        "policy debates",
+        "strategic planning",
+        "weighing pros and cons"
+    ],
+    "misuse_notes": "Overused — consider alternatives like 'mixed blessing' or 'cuts both ways' for variety."
+}

@@ -1,0 +1,129 @@
+# -------------------------------------------------------------------------
+# Workflow: validate-state.yml
+# Description: Validate all JSON data files against their schemas on push
+# Context: LinguaCircuit — Vocabulary & Idiom Learning System
+# Author: Greg Tate
+# -------------------------------------------------------------------------
+
+name: Validate State
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**/*.json'
+      - 'schemas/**/*.json'
+  pull_request:
+    paths:
+      - 'data/**/*.json'
+      - 'schemas/**/*.json'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install jsonschema
+        run: pip install jsonschema
+
+      - name: Validate item definitions
+        run: |
+          python -c "
+          import json, sys, glob
+          from jsonschema import validate, ValidationError
+
+          with open('schemas/item.schema.json') as f:
+              schema = json.load(f)
+
+          errors = 0
+          for pattern in ['data/items/vocabulary/*.json', 'data/items/idioms/*.json']:
+              for path in sorted(glob.glob(pattern)):
+                  try:
+                      with open(path) as f:
+                          data = json.load(f)
+                      validate(instance=data, schema=schema)
+                      print(f'  OK: {path}')
+                  except ValidationError as e:
+                      print(f'  FAIL: {path} — {e.message}')
+                      errors += 1
+                  except json.JSONDecodeError as e:
+                      print(f'  FAIL: {path} — Invalid JSON: {e}')
+                      errors += 1
+
+          if errors:
+              print(f'\n{errors} validation error(s) found.')
+              sys.exit(1)
+          print('\nAll item definitions valid.')
+          "
+
+      - name: Validate learner state files
+        run: |
+          python -c "
+          import json, sys, glob
+          from jsonschema import validate, ValidationError
+
+          with open('schemas/learner-state.schema.json') as f:
+              schema = json.load(f)
+
+          errors = 0
+          for path in sorted(glob.glob('data/learner-state/*/item-state/*.json')):
+              try:
+                  with open(path) as f:
+                      data = json.load(f)
+                  validate(instance=data, schema=schema)
+                  print(f'  OK: {path}')
+              except ValidationError as e:
+                  print(f'  FAIL: {path} — {e.message}')
+                  errors += 1
+              except json.JSONDecodeError as e:
+                  print(f'  FAIL: {path} — Invalid JSON: {e}')
+                  errors += 1
+
+          if errors:
+              print(f'\n{errors} validation error(s) found.')
+              sys.exit(1)
+          print('\nAll learner state files valid.')
+          "
+
+      - name: Validate session history files
+        run: |
+          python -c "
+          import json, sys, glob
+          from jsonschema import validate, ValidationError
+
+          with open('schemas/lesson-result.schema.json') as f:
+              schema = json.load(f)
+
+          files = sorted(glob.glob('data/learner-state/*/session-history/*.json'))
+          if not files:
+              print('No session history files to validate.')
+              sys.exit(0)
+
+          errors = 0
+          for path in files:
+              try:
+                  with open(path) as f:
+                      data = json.load(f)
+                  validate(instance=data, schema=schema)
+                  print(f'  OK: {path}')
+              except ValidationError as e:
+                  print(f'  FAIL: {path} — {e.message}')
+                  errors += 1
+              except json.JSONDecodeError as e:
+                  print(f'  FAIL: {path} — Invalid JSON: {e}')
+                  errors += 1
+
+          if errors:
+              print(f'\n{errors} validation error(s) found.')
+              sys.exit(1)
+          print('\nAll session history files valid.')
+          "

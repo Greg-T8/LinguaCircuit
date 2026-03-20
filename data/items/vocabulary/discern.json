@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-discern",
+    "item_type": "vocabulary",
+    "term": "discern",
+    "part_of_speech": "verb",
+    "definition": "To perceive or recognize something that is not immediately obvious; to distinguish with difficulty.",
+    "usage_notes": [
+        "Implies careful observation or judgment",
+        "Often used with abstract objects: discern patterns, discern intent, discern differences",
+        "Carries a sense of intellectual effort"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'discernere' — to separate, distinguish. 'dis-' (apart) + 'cernere' (to sift, perceive).",
+        "roots": ["dis-", "cernere"]
+    },
+    "examples": [
+        "It was difficult to discern the real motive behind the proposal.",
+        "A trained ear can discern subtle differences between the two instruments."
+    ],
+    "confusions": [
+        {
+            "term": "perceive",
+            "difference": "'Perceive' means to become aware of; 'discern' means to distinguish or separate one thing from another."
+        },
+        {
+            "term": "detect",
+            "difference": "'Detect' implies finding something hidden; 'discern' implies understanding or separating what you find."
+        }
+    ],
+    "difficulty": 2,
+    "tags": ["analytical", "precision", "observation"]
+}

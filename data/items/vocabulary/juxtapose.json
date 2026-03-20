@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-juxtapose",
+    "item_type": "vocabulary",
+    "term": "juxtapose",
+    "part_of_speech": "verb",
+    "definition": "To place two or more things side by side, especially for comparison or contrast.",
+    "usage_notes": [
+        "Often used in analysis, art criticism, and argumentative writing",
+        "Implies deliberate placement to highlight differences or similarities",
+        "The noun form 'juxtaposition' is equally common"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'juxta' (beside, near) + French 'poser' (to place).",
+        "roots": ["juxta", "poser"]
+    },
+    "examples": [
+        "The documentary juxtaposed images of wealth and poverty to make its point.",
+        "Juxtaposing the two approaches reveals their fundamental differences."
+    ],
+    "confusions": [
+        {
+            "term": "compare",
+            "difference": "'Compare' is general analysis; 'juxtapose' emphasizes physical or conceptual side-by-side placement."
+        },
+        {
+            "term": "contrast",
+            "difference": "'Contrast' focuses on differences; 'juxtapose' is the act of placing together, which may reveal either similarities or differences."
+        }
+    ],
+    "difficulty": 3,
+    "tags": ["analytical", "academic", "comparison", "precision"]
+}

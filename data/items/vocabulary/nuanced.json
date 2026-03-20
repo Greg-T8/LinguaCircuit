@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-nuanced",
+    "item_type": "vocabulary",
+    "term": "nuanced",
+    "part_of_speech": "adjective",
+    "definition": "Characterized by subtle distinctions or variations in meaning, expression, or approach.",
+    "usage_notes": [
+        "Used to praise depth of understanding or complexity of thought",
+        "The opposite of simplistic or black-and-white thinking",
+        "Common in criticism, analysis, and intellectual discussion"
+    ],
+    "etymology": {
+        "origin_summary": "From French 'nuance' — a shade or subtle difference, originally from Latin 'nubes' (cloud), suggesting shading.",
+        "roots": ["nubes"]
+    },
+    "examples": [
+        "Her analysis was nuanced, accounting for cultural and economic factors.",
+        "The issue demands a more nuanced approach than a simple yes or no."
+    ],
+    "confusions": [
+        {
+            "term": "complex",
+            "difference": "'Complex' means having many parts; 'nuanced' means having subtle, fine-grained distinctions."
+        },
+        {
+            "term": "detailed",
+            "difference": "'Detailed' means thorough; 'nuanced' means sensitive to subtle differences."
+        }
+    ],
+    "difficulty": 2,
+    "tags": ["analytical", "precision", "intellectual"]
+}

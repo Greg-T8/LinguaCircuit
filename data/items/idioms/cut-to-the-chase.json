@@ -1,0 +1,37 @@
+{
+    "item_id": "idiom-cut-to-the-chase",
+    "item_type": "idiom",
+    "term": "cut to the chase",
+    "part_of_speech": "expression",
+    "definition": "To get to the point without wasting time on unnecessary details.",
+    "usage_notes": [
+        "Conversational and direct — signals impatience with preamble",
+        "Appropriate in informal and semi-formal settings",
+        "Can sound blunt if used with superiors"
+    ],
+    "etymology": {
+        "origin_summary": "From early Hollywood filmmaking, where directors would 'cut' from slow dialogue scenes directly to the exciting chase scene.",
+        "roots": []
+    },
+    "examples": [
+        "Let me cut to the chase — we need to reduce the budget by 20%.",
+        "I appreciate the background, but can you cut to the chase?"
+    ],
+    "confusions": [
+        {
+            "term": "get to the point",
+            "difference": "Nearly synonymous, but 'cut to the chase' is more colorful and implies skipping over material."
+        }
+    ],
+    "difficulty": 1,
+    "tags": ["directness", "communication", "meetings"],
+    "literal_gloss": "Skip ahead to the chase scene in a movie.",
+    "figurative_meaning": "Stop giving unnecessary background and say what matters.",
+    "register": "conversational",
+    "common_contexts": [
+        "business meetings",
+        "presentations that are running long",
+        "conversations with excessive preamble"
+    ],
+    "misuse_notes": "Avoid with audiences who expect formal courtesy or when brevity might seem dismissive."
+}

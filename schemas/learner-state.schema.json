@@ -1,0 +1,117 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://linguacircuit.github.io/schemas/learner-state.schema.json",
+    "title": "LinguaCircuit Learner State",
+    "description": "Per-item recall tracking for a single learner.",
+    "type": "object",
+    "required": [
+        "item_id",
+        "status",
+        "last_reviewed",
+        "next_due",
+        "correct_count",
+        "partial_count",
+        "incorrect_count",
+        "lapse_count",
+        "ease",
+        "stability",
+        "recall_dimensions"
+    ],
+    "properties": {
+        "item_id": {
+            "type": "string",
+            "pattern": "^(vocab|idiom)-[a-z0-9-]+$",
+            "description": "References the item_id in the item definition."
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "new",
+                "learning",
+                "shaky",
+                "mastered"
+            ],
+            "description": "Current learning status."
+        },
+        "last_reviewed": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "format": "date",
+            "description": "ISO 8601 date of last review. Null if never reviewed."
+        },
+        "next_due": {
+            "type": "string",
+            "format": "date",
+            "description": "ISO 8601 date when the item is next due for review."
+        },
+        "correct_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Total correct recalls across all sessions."
+        },
+        "partial_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Total partial recalls across all sessions."
+        },
+        "incorrect_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Total incorrect recalls across all sessions."
+        },
+        "lapse_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Times the item regressed from a higher status."
+        },
+        "ease": {
+            "type": "number",
+            "minimum": 1.0,
+            "maximum": 3.0,
+            "description": "Ease factor (higher = easier to recall). Default 2.5."
+        },
+        "stability": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Current interval in days between reviews."
+        },
+        "recall_dimensions": {
+            "type": "object",
+            "required": [
+                "definition",
+                "sentence_usage",
+                "root_understanding"
+            ],
+            "properties": {
+                "definition": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 2,
+                    "description": "0 = missed, 1 = partial, 2 = correct."
+                },
+                "sentence_usage": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 2,
+                    "description": "0 = missed, 1 = partial, 2 = correct."
+                },
+                "root_understanding": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 2,
+                    "description": "0 = missed, 1 = partial, 2 = correct."
+                }
+            },
+            "description": "Multi-dimensional recall scores from last review."
+        },
+        "notes": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Short additive notes from sessions."
+        }
+    }
+}

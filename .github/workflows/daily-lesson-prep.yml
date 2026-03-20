@@ -1,0 +1,75 @@
+# -------------------------------------------------------------------------
+# Workflow: daily-lesson-prep.yml
+# Description: Build the daily due queue and lesson packet at 5AM Central Time
+# Context: LinguaCircuit — Vocabulary & Idiom Learning System
+# Author: Greg Tate
+# -------------------------------------------------------------------------
+
+name: Daily Lesson Prep
+
+on:
+  schedule:
+    # GitHub cron runs in UTC. We trigger at both 10:00 and 11:00 UTC,
+    # then gate execution to exactly 05:00 in America/Chicago.
+    - cron: '0 10,11 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-lesson:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Evaluate Central Time run window
+        id: ct-window
+        run: |
+          ct_hour=$(TZ=America/Chicago date +%H)
+          if [ "$ct_hour" = "05" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            echo "Running at 05:00 Central Time."
+          else
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping run. Current Central hour: $ct_hour"
+          fi
+
+      - name: Get today's date
+        id: date
+        if: ${{ steps.ct-window.outputs.should_run == 'true' || github.event_name == 'workflow_dispatch' }}
+        run: echo "today=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      - name: Build due queue
+        if: ${{ steps.ct-window.outputs.should_run == 'true' || github.event_name == 'workflow_dispatch' }}
+        shell: pwsh
+        run: |
+          ./scripts/powershell/Get-DueItems.ps1 `
+            -RepoRoot "${{ github.workspace }}" `
+            -LearnerId "greg" `
+            -DateOverride "${{ steps.date.outputs.today }}"
+
+      - name: Build lesson packet
+        if: ${{ steps.ct-window.outputs.should_run == 'true' || github.event_name == 'workflow_dispatch' }}
+        shell: pwsh
+        run: |
+          ./scripts/powershell/Invoke-LessonPrep.ps1 `
+            -RepoRoot "${{ github.workspace }}" `
+            -LearnerId "greg" `
+            -DateOverride "${{ steps.date.outputs.today }}"
+
+      - name: Commit and push lesson packet
+        if: ${{ steps.ct-window.outputs.should_run == 'true' || github.event_name == 'workflow_dispatch' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/derived/due-queues/
+          # Only commit if there are changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "lesson-prep: build due queue and lesson packet for ${{ steps.date.outputs.today }}"
+            git push
+          fi

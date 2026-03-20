@@ -1,0 +1,32 @@
+{
+    "item_id": "vocab-substantiate",
+    "item_type": "vocabulary",
+    "term": "substantiate",
+    "part_of_speech": "verb",
+    "definition": "To provide evidence to support or prove the truth of a claim.",
+    "usage_notes": [
+        "Used in formal argumentation, legal, and academic contexts",
+        "Implies the claim already exists and needs supporting evidence",
+        "Stronger than 'support' — demands concrete proof"
+    ],
+    "etymology": {
+        "origin_summary": "From Latin 'substantia' — substance, essence. 'sub-' (under) + 'stare' (to stand). To give substance to a claim.",
+        "roots": ["sub-", "stare"]
+    },
+    "examples": [
+        "The researchers were unable to substantiate their initial hypothesis.",
+        "Can you substantiate that claim with data?"
+    ],
+    "confusions": [
+        {
+            "term": "verify",
+            "difference": "'Verify' confirms truth; 'substantiate' provides the evidence that makes something credible."
+        },
+        {
+            "term": "corroborate",
+            "difference": "'Corroborate' confirms with additional evidence; 'substantiate' builds foundational evidence."
+        }
+    ],
+    "difficulty": 3,
+    "tags": ["formal", "argumentation", "evidence", "precision"]
+}
