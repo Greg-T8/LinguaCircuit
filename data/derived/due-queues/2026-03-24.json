@@ -1,0 +1,115 @@
+{
+  "generated": "2026-03-24T10:17:40.7078064+00:00",
+  "learner_id": "greg",
+  "date": "2026-03-24",
+  "total_items": 2,
+  "items": [
+    {
+      "item_id": "vocab-ambiguous",
+      "status": "new",
+      "next_due": "2026-03-21",
+      "last_reviewed": null,
+      "ease": 2.5,
+      "stability": 0,
+      "lapse_count": 0,
+      "recall_dimensions": {
+        "definition": 0,
+        "sentence_usage": 0,
+        "root_understanding": 0
+      },
+      "definition": {
+        "item_id": "vocab-ambiguous",
+        "item_type": "vocabulary",
+        "term": "ambiguous",
+        "part_of_speech": "adjective",
+        "definition": "Open to more than one interpretation; not having a single clear meaning.",
+        "usage_notes": [
+          "Can be unintentional (poor writing) or intentional (diplomatic language)",
+          "Critical concept in law, contracts, and requirements engineering",
+          "Distinguishable from vague — ambiguous has multiple clear meanings, vague has no clear meaning"
+        ],
+        "etymology": {
+          "origin_summary": "From Latin 'ambiguus' — uncertain, shifting. 'ambi-' (both ways) + 'agere' (to drive).",
+          "roots": [
+            "ambi-",
+            "agere"
+          ]
+        },
+        "examples": [
+          "The ambiguous wording in the contract led to a legal dispute.",
+          "Her response was deliberately ambiguous to avoid taking a side."
+        ],
+        "confusions": [
+          {
+            "term": "vague",
+            "difference": "'Vague' means unclear due to lack of detail; 'ambiguous' means unclear because multiple interpretations exist."
+          },
+          {
+            "term": "equivocal",
+            "difference": "'Equivocal' implies intentional ambiguity, often to mislead; 'ambiguous' can be unintentional."
+          }
+        ],
+        "difficulty": 2,
+        "tags": [
+          "clarity",
+          "precision",
+          "communication",
+          "analytical"
+        ]
+      }
+    },
+    {
+      "item_id": "vocab-succinct",
+      "status": "new",
+      "next_due": "2026-03-21",
+      "last_reviewed": null,
+      "ease": 2.5,
+      "stability": 0,
+      "lapse_count": 0,
+      "recall_dimensions": {
+        "definition": 0,
+        "sentence_usage": 0,
+        "root_understanding": 0
+      },
+      "definition": {
+        "item_id": "vocab-succinct",
+        "item_type": "vocabulary",
+        "term": "succinct",
+        "part_of_speech": "adjective",
+        "definition": "Expressed clearly and in few words; brief but comprehensive.",
+        "usage_notes": [
+          "Positive connotation — implies efficiency, not lack of depth",
+          "Opposite of verbose or long-winded",
+          "Valued in professional communication, technical writing, and presentations"
+        ],
+        "etymology": {
+          "origin_summary": "From Latin 'succinctus' — tucked up, girded. 'sub-' (under) + 'cingere' (to gird). Metaphor of being tightly bound.",
+          "roots": [
+            "sub-",
+            "cingere"
+          ]
+        },
+        "examples": [
+          "His succinct summary captured the key points in under a minute.",
+          "Keep your emails succinct — busy people appreciate brevity."
+        ],
+        "confusions": [
+          {
+            "term": "concise",
+            "difference": "Nearly synonymous, but 'succinct' emphasizes compression; 'concise' emphasizes removal of excess."
+          },
+          {
+            "term": "terse",
+            "difference": "'Terse' can imply rudeness or abruptness; 'succinct' is always positive."
+          }
+        ],
+        "difficulty": 2,
+        "tags": [
+          "communication",
+          "clarity",
+          "professional"
+        ]
+      }
+    }
+  ]
+}
