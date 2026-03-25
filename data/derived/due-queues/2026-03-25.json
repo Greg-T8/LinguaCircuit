@@ -1,0 +1,115 @@
+{
+  "generated": "2026-03-25T10:17:35.4349350+00:00",
+  "learner_id": "greg",
+  "date": "2026-03-25",
+  "total_items": 2,
+  "items": [
+    {
+      "item_id": "vocab-delineate",
+      "status": "new",
+      "next_due": "2026-03-21",
+      "last_reviewed": null,
+      "ease": 2.5,
+      "stability": 0,
+      "lapse_count": 0,
+      "recall_dimensions": {
+        "definition": 0,
+        "sentence_usage": 0,
+        "root_understanding": 0
+      },
+      "definition": {
+        "item_id": "vocab-delineate",
+        "item_type": "vocabulary",
+        "term": "delineate",
+        "part_of_speech": "verb",
+        "definition": "To describe or indicate precisely; to outline the exact boundaries or features of something.",
+        "usage_notes": [
+          "Used when precision and clear boundaries matter",
+          "Common in technical, legal, and academic writing",
+          "Can be used both literally (drawing outlines) and figuratively (defining roles)"
+        ],
+        "etymology": {
+          "origin_summary": "From Latin 'delineare' — to sketch out. 'de-' (completely) + 'lineare' (to draw a line), from 'linea' (line).",
+          "roots": [
+            "de-",
+            "linea"
+          ]
+        },
+        "examples": [
+          "The contract clearly delineates the responsibilities of each party.",
+          "She delineated the project scope to prevent scope creep."
+        ],
+        "confusions": [
+          {
+            "term": "describe",
+            "difference": "'Describe' gives a general account; 'delineate' implies precise, boundary-level detail."
+          },
+          {
+            "term": "define",
+            "difference": "'Define' states meaning; 'delineate' maps out edges and distinctions."
+          }
+        ],
+        "difficulty": 3,
+        "tags": [
+          "formal",
+          "precision",
+          "technical",
+          "boundaries"
+        ]
+      }
+    },
+    {
+      "item_id": "vocab-succinct",
+      "status": "new",
+      "next_due": "2026-03-21",
+      "last_reviewed": null,
+      "ease": 2.5,
+      "stability": 0,
+      "lapse_count": 0,
+      "recall_dimensions": {
+        "definition": 0,
+        "sentence_usage": 0,
+        "root_understanding": 0
+      },
+      "definition": {
+        "item_id": "vocab-succinct",
+        "item_type": "vocabulary",
+        "term": "succinct",
+        "part_of_speech": "adjective",
+        "definition": "Expressed clearly and in few words; brief but comprehensive.",
+        "usage_notes": [
+          "Positive connotation — implies efficiency, not lack of depth",
+          "Opposite of verbose or long-winded",
+          "Valued in professional communication, technical writing, and presentations"
+        ],
+        "etymology": {
+          "origin_summary": "From Latin 'succinctus' — tucked up, girded. 'sub-' (under) + 'cingere' (to gird). Metaphor of being tightly bound.",
+          "roots": [
+            "sub-",
+            "cingere"
+          ]
+        },
+        "examples": [
+          "His succinct summary captured the key points in under a minute.",
+          "Keep your emails succinct — busy people appreciate brevity."
+        ],
+        "confusions": [
+          {
+            "term": "concise",
+            "difference": "Nearly synonymous, but 'succinct' emphasizes compression; 'concise' emphasizes removal of excess."
+          },
+          {
+            "term": "terse",
+            "difference": "'Terse' can imply rudeness or abruptness; 'succinct' is always positive."
+          }
+        ],
+        "difficulty": 2,
+        "tags": [
+          "communication",
+          "clarity",
+          "professional"
+        ]
+      }
+    }
+  ]
+}
